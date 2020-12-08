@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+</head>
+<body>
+<table>
+    <tr>
+        <th>amount</th>
+        <th>from curency</th>
+        <th>to curency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="text" id="tienviet"></td>
+        <td>
+            <select>
+                <option >vietnam</option>
+            </select>
+        </td>
+        <td>
+            <select>
+                <option >USD</option>
+            </select>
+        </td>
+        <td><input type="button" onclick="convert()" value="convert"></td>
+    </tr>g
+
+</table>
+<p id="ketqua">
+</p>
+<script>
+    function convert(){
+        let vnd = document.getElementById("tienviet").value
+        document.getElementById("ketqua").innerHTML=vnd/23000
+    }
+</script>
+</body>
+</html>
